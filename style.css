@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.menu{
+    background-color: #123;
+    height: 100vh;
+    width: 90px;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 10px;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 98%;
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: .5s;
+}
+ul li a:hover, .active, .content-box .box:hover, td:hover{
+    background-color: #ffffff55;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #ff0000;
+}
+ul li a i{
+    font-size: 30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 3px #fff;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile h2{
+    font-size: 20px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.top{
+    background-color: #0481ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.content-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.content-box .box{
+    flex-basis: 150px;
+    height: 150px;
+    background-color: #123;
+    border-radius: 8px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-box .box i{
+    font-size: 40px;
+}
+.content-box .box .data{
+    text-align: center;
+}
+.content-box .box .data span{
+    font-size: 30px;
+}
+table{
+    text-align: center;
+    width: 100%;
+    border-spacing: 8px;
+}
+td, th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+thead tr th{
+    background-color: #0481ff;
+}
+tbody tr td:nth-child(2){
+    background-color: #008000;
+    font-weight: 600;
+}
+tbody tr td:nth-child(3){
+    background-color: #ffd700;
+    color: #000000;
+    font-weight: 600;
+}
